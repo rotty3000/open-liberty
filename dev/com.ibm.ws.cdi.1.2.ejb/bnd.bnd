@@ -37,6 +37,7 @@ Private-Package: \
   com.ibm.ws.cdi.ejb.security
 
 Import-Package: \
+  com.ibm.ws.serialization, \
   com.ibm.ws.cdi.internal.interfaces, \
   com.ibm.ws.cdi.ejb.resources, \
   *
@@ -44,8 +45,9 @@ Import-Package: \
 WS-TraceGroup: JCDI
 
 -buildpath: \
-        com.ibm.ws.cdi.weld;version=latest, \
-        com.ibm.ws.cdi.internal;version=latest, \
+	com.ibm.ws.serialization;version=latest, \
+  com.ibm.ws.cdi.weld;version=latest, \
+  com.ibm.ws.cdi.internal;version=latest, \
 	com.ibm.ws.adaptable.module;version=latest,\
 	com.ibm.ws.ejbcontainer;version=latest,\
 	com.ibm.ws.ejbcontainer.core;version=latest,\
